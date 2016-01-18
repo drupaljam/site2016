@@ -1,0 +1,53 @@
+
+@mixin border-top-brown {
+  position: relative;
+
+  &:before {
+    content: '';
+    background: image-url('brown.png');
+    width: 100%;
+    height: 22px;
+    background-size: auto 15px;
+    background-position: center top;
+    background-repeat: repeat-x;
+    position: absolute;
+    left: 0;
+    top: -22px;
+    border-bottom: 7px solid #201510;
+  }
+}
+
+@mixin border-bottom-brown {
+  position: relative;
+
+  &:after {
+    content: '';
+    background: image-url('brown.png');
+    width: 100%;
+    height: 22px;
+    background-size: auto 15px;
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+    border-top: 7px solid #201510;
+  }
+}
+
+@mixin border-top-yellow {
+  position: relative;
+
+  &:before {
+    content: '';
+    background: image-url('yellow.png');
+    width: 100%;
+    height: 15px;
+    background-size: auto 15px;
+    background-position: center top;
+    background-repeat: repeat-x;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

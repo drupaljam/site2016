@@ -6,15 +6,33 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "DrupalJam 2016" %></title>
 
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Roboto+Slab:300,400,700">
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>
   </head>
 
   <body class="<%= page_classes %>">
     <%= yield %>
+
+    <div class="footer-wrapper">
+      <section class="footer"><div class="section-inner">
+        <span class="sdn"></span>
+        <p>
+          Powered by <a href="http://stichtingdrupal.nl/" target="_blank">Stichting Drupal Nederland</a>.
+        </p>
+        <p>
+          DrupalJam wordt mogelijk gemaakt door de vrijwillige bijdrage van leden uit de Nederlandse Drupal-community.
+        </p>
+        <p class="links">
+          <%= link_to 'Colofon', '/colofon.html' %>
+        </p>
+      </div></section>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <%= javascript_include_tag :all %>
   </body>
 </html>
