@@ -104,9 +104,33 @@ html, body {
 
 .content-wrapper {
   background: image-url('background-light.png');
+  color: #22150E;
 
   section {
     padding: 52px 0;
+  }
+
+  a {
+    color: #22150E;
+    border-bottom: 1px solid #22150E;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    margin: 15px 0 0 0;
+  }
+
+  .divider {
+    position: relative;
+    top: -0.25em;
+    margin: 0 0.25em;
+    display: inline-block;
+    height: 1px;
+    width: 0.7em;
+    background: #22150E;
   }
 }
 
