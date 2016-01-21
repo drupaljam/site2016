@@ -72,10 +72,19 @@ if (!Date.now) {
     [['seconde', 'seconden'], 1],
   ];
 
+  var prev_difference = undefined;
+
   var callback = function(t) {
     timestamp = Math.floor(Date.now() / 1000);
 
     difference = timestamp_end - timestamp;
+
+    if (prev_difference !== undefined && prev_difference === difference) {
+      window.requestAnimationFrame(callback);
+      return;
+    }
+
+    prev_difference = difference;
 
     if (difference <= 0) {
       $('.counter').html('<p><strong>De sponsorbrochure komt echt heel snel nu!</strong></p>');
