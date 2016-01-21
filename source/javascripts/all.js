@@ -33,6 +33,10 @@ window.get_viewport_size = function() {
         };
 }());
 
+if (!Date.now) {
+  Date.now = function() { return new Date().getTime(); }
+}
+
 (function() {
   var orientation = undefined;
   
@@ -58,3 +62,53 @@ window.get_viewport_size = function() {
   step();
 })();
 
+(function() {
+  var timestamp_end = 1453885200;
+
+  var groups = [
+    [['dag', 'dagen'], 60*60*24],
+    [['uur', 'uur'], 60*60],
+    [['minuut', 'minuten'], 60],
+    [['seconde', 'seconden'], 1],
+  ];
+
+  var callback = function(t) {
+    timestamp = Math.floor(Date.now() / 1000);
+
+    difference = timestamp_end - timestamp;
+
+    if (difference <= 0) {
+      $('.counter').html('<p><strong>De sponsorbrochure komt echt heel snel nu!</strong></p>');
+      return;
+    }
+
+    var difference_components = [];
+    var found = false;
+    $.each(groups, function(index, group) {
+      var size = group[1];
+
+      if (difference < size && !found) {
+        return;
+      }
+
+      found = true;
+
+      var number = (difference - (difference % size)) / size;
+      difference = difference - (number * size);
+
+      if (number == 1) {
+        difference_components.push('' + number + '&nbsp;' + group[0][0]);
+      } else {
+        difference_components.push('' + number + '&nbsp;' + group[0][1]);
+      }
+    });
+
+    var text = '<p><strong>' + difference_components.join(' &mdash; ') + '</strong><br />tot de sponsorbrochure online komt.</p>';
+
+    $('.counter').html(text);
+
+    window.requestAnimationFrame(callback);
+  };
+
+  window.requestAnimationFrame(callback);
+})();

@@ -17,7 +17,7 @@ html, body {
 
 .header-wrapper {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: image-url('background.jpg');
   background-size: cover;
   background-position: 50% 50%;
@@ -29,13 +29,24 @@ html, body {
     padding: 65px 0 30px;
     text-align: center;
 
-    .header-text, .counter {
+    .header-text {
+      width: 100%;
+      margin: 25px auto 0;
+
+      p {
+        font-weight: 300;
+        color: #E1D7D1;
+      }
+    }
+
+    .counter {
       width: 100%;
       margin-top: 25px;
 
       p {
         font-weight: 300;
-        color: #E1D7D1;
+        color: #FCE93C;
+        font-size: 1.25em;
       }
     }
 
@@ -131,6 +142,10 @@ section {
     section {
       padding: 85px 0 50px;
 
+      .header-text {
+        width: 60%;
+      }
+
       .logo {
         width: 40%;
         padding-bottom: 40% * $logo-ratio;
@@ -156,6 +171,10 @@ section {
   .header-wrapper {
     section {
       padding: 105px 0 80px;
+
+      .header-text {
+        width: 50%;
+      }
 
       .logo {
         width: 30%;
