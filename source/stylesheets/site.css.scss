@@ -5,6 +5,8 @@
 @import "neat";
 @import "mixins";
 
+$logo-ratio: 1.21805293369804;
+
 html, body {
   margin: 0;
   padding: 0;
@@ -15,6 +17,7 @@ html, body {
 
 .header-wrapper {
   width: 100%;
+  height: 100vh;
   background-image: image-url('background.jpg');
   background-size: cover;
   background-position: 50% 50%;
@@ -26,9 +29,31 @@ html, body {
     padding: 65px 0 30px;
     text-align: center;
 
-    img {
+    .header-text {
+      width: 100%;
+      margin-top: 25px;
+
+      p {
+        font-weight: 300;
+        color: #E1D7D1;
+      }
+    }
+
+    .logo {
       width: 60%;
-      height: auto;
+      padding-bottom: 60% * $logo-ratio;
+      margin: 0 auto;
+      height: 0;
+      position: relative;
+    }
+
+    img {
+      position: absolute;
+      left: 0; right: 0;
+      top: 0; bottom: 0;
+
+      width: 100%;
+      height: 100%;
     }
   }
 }
@@ -106,8 +131,9 @@ section {
     section {
       padding: 85px 0 50px;
 
-      img {
+      .logo {
         width: 40%;
+        padding-bottom: 40% * $logo-ratio;
       }
     }
   }
@@ -131,8 +157,9 @@ section {
     section {
       padding: 105px 0 80px;
 
-      img {
+      .logo {
         width: 30%;
+        padding-bottom: 30% * $logo-ratio;
       }
     }
   }
