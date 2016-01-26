@@ -132,6 +132,49 @@ html, body {
     width: 0.7em;
     background: #22150E;
   }
+
+  .mc-field-group-inline {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+
+    .mc-field-group {
+      flex-grow: 1;
+      padding: 0 10px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  form button {
+    /* Rectangle 60: */
+    background-color: #FCE93C;
+    background-image: linear-gradient(-180deg, #FCE93C 0%, #F8CE1C 100%);
+    box-shadow: 4px 4px 0px 0px #9C6C34, inset 2px 2px 0px 0px rgba(255,255,255,0.50);
+    border-radius: 2px;
+    color: #22150E;
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-size: 0.8em;
+
+    &:before, &:after {
+      content: '';
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      padding: 0 20px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: image-url('screw.svg');
+    }
+  }
 }
 
 p {
