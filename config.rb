@@ -23,7 +23,7 @@ configure :development do
   # activate :livereload
 end
 
-activate :asset_hash, exts: %w(.jpg .jpeg .png .gif .webp .js .css .otf .woff .woff2 .eot .ttf .svg .svgz .pdf)
+activate :asset_hash #, exts: %w(.jpg .jpeg .png .gif .webp .js .css .otf .woff .woff2 .eot .ttf .svg .svgz .pdf)
 
 ###
 # Helpers
