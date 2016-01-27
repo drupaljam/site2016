@@ -193,6 +193,10 @@ button, .button {
       transform: rotate(0.5turn);
     }
   }
+
+  &:focus, &:active {
+    color: #22150E;
+  }
 }
 
 p {
