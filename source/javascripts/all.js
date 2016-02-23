@@ -121,3 +121,34 @@ if (!Date.now) {
 
   window.requestAnimationFrame(callback);
 })();
+
+
+$.fn.shuffle = function() {
+  var m = this.length;
+  var i, t, temp_element;
+
+  while(m) {
+    i = Math.floor(Math.random() * m--)
+
+    if(i != m) {
+      temp_element = $('<span />');
+      $(this[i]).after(temp_element);
+      $(this[i]).detach();
+      $(this[m]).after(this[i]);
+      $(this[m]).detach();
+      $(temp_element).after(this[m]);
+      $(temp_element).detach();
+    }
+    
+    t = this[m];
+    this[m] = this[i];
+    this[i] = t;
+  }
+
+  return this;
+}
+
+$('.sponsors').each(function() {
+  $('.sponsor', this).shuffle();
+});
+
