@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M17.433,8.098c-0.161-0.566-0.386-1.105-0.667-1.608l1.294-2.72c-0.447-0.55-0.948-1.052-1.499-1.498
+			l-2.719,1.293c-0.504-0.281-1.043-0.505-1.609-0.666l-1.01-2.844C10.875,0.019,10.521,0,10.166,0C9.809,0,9.455,0.019,9.108,0.055
+			L8.098,2.898C7.531,3.06,6.992,3.283,6.488,3.564L3.77,2.271C3.221,2.718,2.718,3.22,2.271,3.77l1.293,2.72
+			C3.283,6.992,3.059,7.531,2.898,8.098L0.055,9.108C0.019,9.456,0,9.809,0,10.165c0,0.357,0.019,0.71,0.055,1.057l2.844,1.012
+			c0.16,0.565,0.385,1.105,0.666,1.608l-1.293,2.72c0.446,0.549,0.949,1.051,1.498,1.497c0,0,3.762-0.787,4.328-0.626l1.011,2.844
+			c0.347,0.035,0.7,0.055,1.058,0.055c0.355,0,0.709-0.02,1.057-0.055l1.01-2.844c0.566-0.161,1.105-0.386,1.609-0.666l2.719,1.292
+			c0.551-0.446,1.052-0.948,1.499-1.497l-1.294-2.72c0.281-0.503,0.506-1.043,0.667-1.608l2.843-1.012
+			c0.036-0.347,0.055-0.699,0.055-1.057c0-0.356-0.019-0.709-0.055-1.057L17.433,8.098z M10.166,13.415
+			c-1.795,0-3.25-1.455-3.25-3.25c0-1.794,1.455-3.25,3.25-3.25s3.25,1.456,3.25,3.25C13.416,11.96,11.961,13.415,10.166,13.415z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<defs>
+			<rect id="SVGID_3_" width="20" height="20"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		</clipPath>
+		<rect x="-5" y="-5" clip-path="url(#SVGID_4_)" fill="#F9DB27" width="30.33" height="30.331"/>
+	</g>
+</g>
+<rect fill="none" width="20" height="20"/>
+<rect fill="none" width="20" height="20"/>
+<rect x="-893.17" y="-131.503" fill-rule="evenodd" clip-rule="evenodd" fill="none" width="1509" height="841"/>
+<rect fill="none" width="20" height="20"/>
+</svg>

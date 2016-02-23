@@ -1,3 +1,18 @@
+require 'rexml/document'
+require "base64"
+
+helpers do
+  def svg_size(file)
+    svg = File.read(file)
+    doc = REXML::Document.new(svg)
+    [doc.root.attributes['width'].to_f, doc.root.attributes['height'].to_f]    
+  end
+
+  def svg_base64(file)
+    'data:image/svg+xml;base64,' + Base64.strict_encode64(File.read(file))
+  end
+end
+
 ###
 # Page options, layouts, aliases and proxies
 ###

@@ -1,0 +1,38 @@
+
+bronze:
+  human: Brons
+  sponsors: []
+silver:
+  human: Zilver
+  sponsors:
+    -
+      key: hoppinger
+      name: Hoppinger
+      url: https://www.hoppinger.com/
+    -
+      key: limoen-groen
+      name: Limoen Groen
+      url: https://www.limoengroen.nl/
+gold:
+  human: Goud
+  sponsors:
+    -
+      key: one-shoe
+      name: One Shoe
+      url: http://oneshoe.nl/nl
+    -
+      key: finalist
+      name: Finalist
+      url: http://www.finalist.nl/
+
+platinum:
+  human: Platinum
+  sponsors: 
+    -
+      key: druidfi
+      name: Druid.fi
+      url: http://druid.fi/
+    # -
+    #   key: rtl
+    #   name: RTL Nieuws
+    #   url: http://rtlnieuws.nl/

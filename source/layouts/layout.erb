@@ -14,6 +14,7 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <%= stylesheet_link_tag :site %>
+    <%= stylesheet_link_tag :sponsorlogos %>
   </head>
 
   <body class="<%= page_classes %>">
@@ -40,5 +41,13 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <%= javascript_include_tag :all %>
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-60516992-1','auto');ga('send','pageview');
+    </script>
   </body>
 </html>

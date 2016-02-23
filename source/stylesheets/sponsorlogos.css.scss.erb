@@ -1,0 +1,37 @@
+
+
+<%
+  areas = {
+    'bronze' => 10,
+    'silver' => 15,
+    'gold' => 35,
+    'platinum' => 70,
+  }
+%>
+
+<% data.sponsors.each do |type, sponsor_type_info| %>
+  <% height = 0 %>
+
+  <% 
+    height = sponsor_type_info['sponsors'].map do | sponsor|
+      size = svg_size(File.join(File.dirname(File.dirname(current_page.file_descriptor.full_path)), 'images/sponsors', "#{sponsor['key']}.svg"))
+      ratio = size[0] / size[1]
+      width = Math.sqrt(areas[type] * ratio)
+      width / ratio
+    end.max %>
+
+  <% sponsor_type_info['sponsors'].each do | sponsor| %>
+    .sponsor-<%= sponsor['key'] %> {
+      <%
+        path = File.join(File.dirname(File.dirname(current_page.file_descriptor.full_path)), 'images/sponsors', "#{sponsor['key']}.svg")
+        size = svg_size(path)
+        ratio = size[0] / size[1]
+        width = Math.sqrt(areas[type] * ratio)
+      %>
+
+      width: <%= width %>em;
+      height: <%= height %>em;
+      background-image: url('<%= svg_base64(path) %>');
+    }
+  <% end %>
+<% end %>

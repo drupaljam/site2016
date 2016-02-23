@@ -5,6 +5,8 @@
 @import "neat";
 @import "mixins";
 
+@import "fonts";
+
 $logo-ratio: 1.21805293369804;
 
 html, body {
@@ -23,7 +25,6 @@ html, body {
   background-position: 50% 50%;
   
   @include border-top-yellow;
-  @include border-bottom-brown;
 
   section {
     padding: 65px 0 30px;
@@ -86,8 +87,6 @@ html, body {
   color: #DBD7D5;
 
   background: image-url('background-dark.png');
-
-  @include border-top-brown;
 
   section {
     padding: 30px 0;
@@ -155,13 +154,28 @@ html, body {
   }
 }
 
+.content-wrapper.content-wrapper-dark {
+  background: image-url('background-dark.png');
+  color: #E1D7D1;
+
+  a {
+    color: #F9DB26;
+    border-bottom: 1px solid #F9DB26;
+  }
+}
+
+.content-wrapper.content-wrapper-light {
+  @include border-bottom-brown;
+  @include border-top-brown;
+}
+
 button, .button {
   /* Rectangle 60: */
   background-color: #FCE93C;
   background-image: linear-gradient(-180deg, #FCE93C 0%, #F8CE1C 100%);
   box-shadow: 4px 4px 0px 0px #9C6C34, inset 2px 2px 0px 0px rgba(255,255,255,0.50);
   border-radius: 2px;
-  color: #22150E;
+  color: #452B1D;
   text-transform: uppercase;
   padding: 20px 0;
   font-size: 0.8em;
@@ -170,6 +184,7 @@ button, .button {
   position: relative;
   top: 0; left: 0;
   font-weight: 400;
+  font-family: $heading-font-family;
 
   &:before, &:after {
     content: '';
@@ -187,7 +202,7 @@ button, .button {
   &:hover {
     box-shadow: 1px 1px 0px 0px #9C6C34, inset 1px 1px 0px 0px rgba(255,255,255,0.50);
     top: 3px; left: 3px;
-    color: #22150E;
+    color: #452B1D;
 
     &:before, &:after {
       transform: rotate(0.5turn);
@@ -208,6 +223,52 @@ section {
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   margin: 0 auto;
+}
+
+h1 {
+  font-size: 34px;
+  text-transform: uppercase;
+  line-height: 40px;
+  text-align: center;
+
+  &:before {
+    display: inline-block;
+    content: '';
+    width: 30px;
+    height: 24px;
+    background-image: image-url('cog-brown.svg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 20px 20px;
+  }
+  &:after {
+    display: inline-block;
+    content: '';
+    width: 30px;
+    height: 24px;
+    background-image: image-url('cog-brown.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 20px 20px;
+  }
+}
+
+.sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  .sponsor {
+    display: block;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin: 20px;
+    text-indent: -1000px;
+    overflow: hidden;
+    border-bottom: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -240,6 +301,10 @@ section {
         padding-bottom: 40% * $logo-ratio;
       }
     }
+  }
+
+  .sponsors {
+    font-size: 1.5em;
   }
 }
 
