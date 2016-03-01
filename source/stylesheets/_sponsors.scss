@@ -1,0 +1,24 @@
+
+.sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  .sponsor {
+    display: block;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin: 20px;
+    text-indent: -1000px;
+    overflow: hidden;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .sponsors {
+    font-size: 1.5em;
+  }
+}

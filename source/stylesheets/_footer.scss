@@ -1,0 +1,47 @@
+
+.footer-wrapper {
+  span.sdn {
+    display: block;
+    background: image-url('sdn.svg');
+    background-repeat: no-repeat;
+    background-size: 7em auto;
+    background-position: center 0;
+
+    width: 7em;
+    height: (7em / $sdn_logo_ratio);
+    margin-bottom: 1em;
+  }
+
+  color: #DBD7D5;
+
+  background: image-url('background-dark.png');
+
+  section {
+    padding: 30px 0;
+  }
+
+  a {
+    color: #F9DB26;
+  }
+
+  p {
+    margin: 0 0 15px 0;
+    max-width: 748px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-wrapper {
+    section {
+      padding: 50px 0;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-wrapper {
+    section {
+      padding: 80px 0;
+    }
+  }
+}

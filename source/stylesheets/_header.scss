@@ -1,0 +1,90 @@
+
+$logo-ratio: 1.21805293369804;
+
+.header-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-image: image-url('background.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  
+  @include border-top-yellow;
+
+  section {
+    padding: 65px 0 30px;
+    text-align: center;
+
+    .header-text, .brochure {
+      width: 100%;
+      margin: 25px auto 0;
+
+      p {
+        font-weight: 300;
+        color: #E1D7D1;
+        margin-bottom: 10px;
+      }
+    }
+
+    .counter {
+      width: 100%;
+      margin-top: 25px;
+
+      p {
+        font-weight: 300;
+        color: #FCE93C;
+        font-size: 1.25em;
+      }
+    }
+
+    .logo {
+      width: 60%;
+      padding-bottom: 60% * $logo-ratio;
+      margin: 0 auto;
+      height: 0;
+      position: relative;
+    }
+
+    img {
+      position: absolute;
+      left: 0; right: 0;
+      top: 0; bottom: 0;
+
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header-wrapper {
+    section {
+      padding: 85px 0 50px;
+
+      .header-text {
+        width: 80%;
+      }
+
+      .logo {
+        width: 40%;
+        padding-bottom: 40% * $logo-ratio;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-wrapper {
+    section {
+      padding: 105px 0 80px;
+
+      .header-text {
+        width: 70%;
+      }
+
+      .logo {
+        width: 30%;
+        padding-bottom: 30% * $logo-ratio;
+      }
+    }
+  }
+}
