@@ -58,12 +58,21 @@
   a {
     color: #F9DB26;
     border-bottom: 1px solid #F9DB26;
+
+    &.button {
+      color: #452B1D;
+    }
   }
 }
 
 .content-wrapper.content-wrapper-light {
   @include border-bottom-brown;
   @include border-top-brown;
+}
+
+.content-inner-center {
+  margin-top: 50px;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
