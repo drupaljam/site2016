@@ -1,7 +1,11 @@
 
 bronze:
   human: Brons
-  sponsors: []
+  sponsors: 
+    -
+      key: webbeest
+      name: Web-Beest
+      url: http://www.web-beest.nl/
 silver:
   human: Zilver
   sponsors:
@@ -24,7 +28,10 @@ gold:
       key: finalist
       name: Finalist
       url: http://www.finalist.nl/
-
+    -
+      key: synetic
+      name: Synetic
+      url: https://synetic.nl/
 platinum:
   human: Platinum
   sponsors: 
@@ -32,7 +39,7 @@ platinum:
       key: druidfi
       name: Druid.fi
       url: http://druid.fi/en
-    # -
-    #   key: rtl
-    #   name: RTL Nieuws
-    #   url: http://rtlnieuws.nl/
+    -
+      key: rtlnieuws
+      name: RTL Nieuws
+      url: http://rtlnieuws.nl/
