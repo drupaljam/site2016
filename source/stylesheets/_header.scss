@@ -22,6 +22,10 @@ $logo-ratio: 1.21805293369804;
         font-weight: 300;
         color: #E1D7D1;
         margin-bottom: 10px;
+
+        &.header-shadow {
+          text-shadow: 2px 2px 3px rgba(73, 73, 73, 0.7);
+        }
       }
     }
 
