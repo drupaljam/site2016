@@ -6,6 +6,18 @@ bronze:
       key: webbeest
       name: Web-Beest
       url: http://www.web-beest.nl/
+    -
+      key: yoast
+      name: Yoast
+      url: https://yoast.com/
+    -
+      key: dmedia
+      name: d-Media
+      url: http://d-media.nl/
+    -
+      key: webscale
+      name: Webscale
+      url: https://www.webscale.nl/
 silver:
   human: Zilver
   sponsors:
@@ -17,6 +29,14 @@ silver:
       key: limoen-groen
       name: Limoen Groen
       url: https://www.limoengroen.nl/
+    -
+      key: elonisas
+      name: Elonisas
+      url: https://elonisas.nl/
+    -
+      key: trinoco
+      name: Trinoco
+      url: https://trinoco.nl/
 gold:
   human: Goud
   sponsors:
@@ -32,6 +52,10 @@ gold:
       key: synetic
       name: Synetic
       url: https://synetic.nl/
+    -
+      key: ezcompany
+      name: ezCompany
+      url: https://www.ezcompany.nl/
 platinum:
   human: Platinum
   sponsors: 
