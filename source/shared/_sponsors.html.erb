@@ -1,7 +1,9 @@
-<h1><%= data.sponsors[sponsor_type]['human'] %> sponsoren</h1>
 
 <div class="sponsors">
-  <% data.sponsors[sponsor_type]['sponsors'].each do |sponsor| %>
-    <a href="<%= sponsor['url'] %>" class="sponsor sponsor-<%= sponsor['key'] %>" target="_blank"><%= sponsor['name'] %></a>  
-  <% end %>
+  <h1><%= data.sponsors[sponsor_type]['human'] %> sponsoren</h1>
+  <div class="sponsors-inner">
+    <% data.sponsors[sponsor_type]['sponsors'].each do |sponsor| %>
+      <a href="<%= sponsor['url'] %>" class="sponsor sponsor-<%= sponsor['key'] %>" target="_blank"><%= sponsor['name'] %></a>  
+    <% end %>
+  </div>
 </div>

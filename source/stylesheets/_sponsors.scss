@@ -1,10 +1,14 @@
 
 .sponsors {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  margin-top: 40px;
   margin-bottom: 40px;
+
+  .sponsors-inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
 
   .sponsor {
     display: block;
@@ -21,5 +25,6 @@
 @media (min-width: 768px) {
   .sponsors {
     font-size: 1.5em;
+    margin-bottom: 80px;
   }
 }
