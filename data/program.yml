@@ -1,0 +1,195 @@
+---
+
+from: 9:00
+to: 18:00
+
+global:
+  slots:
+    -
+      from: 9:00
+      to: 9:45
+      title: Registratie en Welkom
+      type: plenair
+    -
+      from: 12:45
+      to: 14:00
+      title: Lunch
+      type: plenair
+    - 
+      from: 17:15
+      to: 18:00
+      title: Afterdrinks
+      type: plenair
+rooms:
+  -
+    name: Druid-zaal
+    slots:
+      - 
+        from: 9:45
+        to: 10:00
+        title: "Opening"
+        type: plenair
+      - 
+        from: 10:00
+        to: 10:45
+        title: "Keynote"
+        speaker: Boris van Zanten
+        type: visie
+      - 
+        from: 11:00
+        to: 11:45
+        title: "The Second Enlightenment"
+        speaker: Steven Pemberton
+        type: visie
+        description: "Het boek maakte de verlichting mogelijk, het web maakt een tweede verlichting mogelijk."
+      - 
+        from: 12:00
+        to: 12:45
+        title: "Nieuwe interacties in een verbonden wereld"
+        speaker: Iskander Smit
+        type: visie
+        description: "Wat betekent het om fysieke objecten toe te voegen aan onze digitale systemen? Wat zijn de laatste IoT ontwikkelingen?"
+      - 
+        from: 14:00
+        to: 14:45
+        title: "Waarom Open overheid?"
+        speaker: Paul Suijkerbuijk
+        type: visie
+      - 
+        from: 15:00
+        to: 15:45
+        title: "Choosing the web’s future"
+        speaker: Peter Paul Koch
+        type: tech
+        description: "Maak de browser geen bloatware. Een website is geen native app. Hoe kunnen we een succesvol web-ecosysteem bouwen."
+      - 
+        from: 16:00
+        to: 16:15
+        title: Groeps­foto
+        type: plenair
+      - 
+        from: 16:15
+        to: 17:00
+        title: "Keynote"
+        speaker: Eleanora Saitta
+        type: visie
+      - 
+        from: 17:00
+        to: 17:15
+        title: "Sluiting"
+        type: plenair
+  -
+    name: RTL-Nieuws zaal
+    slots:
+      -
+        from: 11:00
+        to: 11:45
+        title: "Headless Drupal. Waarom & hoe een RESTful API in Drupal?"
+        speaker: Joris Snoek
+        type: tech
+        description: "Wat is headless Drupal en hoe implementeer je het? Waarom wordt Lucius er blij van en tegen welke uitdagingen liepen we aan?"
+      -
+        from: 12:00
+        to: 12:45
+        title: "Of horses, water & getting them to drink"
+        speaker: "Chris Jansen & Jeffrey A. McGuire"
+        type: community
+        description: "Wetenschappelijk bewijs waarom bijdragen aan open source meer oplevert dan het kost en hoe dit waar te maken."
+      -
+        from: 14:00
+        to: 14:45
+        title: "Reinventing Organizations"
+        speaker: Roel de Meester
+        type: visie
+        description: "De samenleving verandert en mensen zijn meer en meer op zoek naar zingeving. Dit zien we ook duidelijk bij open source."
+      - 
+        from: 15:00
+        to: 15:45
+        title: "Drupal in the Newsroom"
+        speaker: Koen van Gestel
+        type: business
+        description: "Waarom RTL Nieuws en RTL Z hebben gekozen voor Drupal in het continue veranderende medialandschap en de uitdagingen waar high traffic websites mee te maken krijgen bij het gebruik van Drupal."
+  -
+    name: Luchtschip
+    slots:
+      -
+        from: 11:00
+        to: 11:45
+        title: "Docker for Drupal Development"
+        speaker: Eric Mulder
+        type: tech
+        description: "Optimaliseer jouw lokale ontwikkelomgeving met Docker en voorkom gedoe met verschillende requirements."
+      -
+        from: 12:00
+        to: 12:45
+        title: "Cacheability metadata: Hoe Drupal 8 één moeilijk probleem oplost"
+        speaker: Marc van Gend
+        type: tech
+        description: "Een praktische sessie die je helpt om de performance van je modules in Drupal 8 te optimaliserenen problemen te voorkomen."
+      -
+        from: 14:00
+        to: 14:45
+        title: "Responsive images: resolution switching in Drupal 7 & 8"
+        speaker: Rolf Meijer
+        type: tech
+        description: "Wat is er mogelijk met responsive images in Drupal. Welke modules heb je nodig en wanneer is een polyfill noodzakelijk."
+      - 
+        from: 15:00
+        to: 15:45
+        title: "Ontwikkelen van online platformen met Drupal 8"
+        speaker: Raymond Muilwijk
+        type: tech
+        description: "Hoe kan je met Drupal 8 sneller complexe platformen en proto-types bouwen."
+  -
+    name: Stoomlokaal
+    slots:
+      -
+        from: 11:00
+        to: 11:45
+        title: "Game Theory, betere aanbiedingen door wiskunde"
+        speaker: Bert Boerland
+        type: business
+        description: "Hoe haal je het beste uit samenwerking met partners voor zowel jezelf, jouw partner als jullie klant met behulp van wiskunde."
+      -
+        from: 12:00
+        to: 12:45
+        title: "Toegankelijkheid: het sprookje over de 7 blinden en de prinses met het lamme handje"
+        speaker: Jeroen Hulscher
+        type: tech
+        description: "Hoe houden we het web toegankelijk met de diversiteit van platformen, browsers, devices en gebruikers."
+      -
+        from: 14:00
+        to: 14:45
+        title: "PHP-FIG: how the PHP world got off their islands"
+        speaker: Bart Feenstra
+        type: community
+        description: "Wat is FIG en welke PSRs zijn er? Hoe bouw je uitwisselbare PHP packages? Leer alles over de wereldwijde PHP community."
+      - 
+        from: 15:00
+        to: 15:45
+        title: "Drupal 8 Migrate from the trenches"
+        speaker: Erik Stielstra
+        type: tech
+        description: "Mijn ervaring met migratie van een Drupal 6 site naar Drupal 8"
+  -
+    name: Pomphuis
+    slots:
+      - 
+        from: 11:00
+        to: 12:45
+        title: Jaarvergadering Drupal voor Gemeenten
+        speaker: Besloten vergadering
+      -
+        from: 14:00
+        to: 14:45
+        title: "Jekyll microsites vanuit Drupal"
+        speaker: Daniel Beeke
+        type: tech
+        description: "Case study over het genereren van Jekyll sites vanuit Drupal en de tools en modules die je daarbij kan gebruiken."
+      - 
+        from: 15:00
+        to: 15:45
+        title: "De toekomst van DevOps in Drupal Social"
+        speaker: Niels van der Molen
+        type: tech
+        description: "Een case study van een transitie van een monolithische Vagrant/Jenkins naar microservice Docker/Travis workflow."

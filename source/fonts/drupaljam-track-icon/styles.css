@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "drupaljam-track-icon";
+  src:url("fonts/drupaljam-track-icon.eot");
+  src:url("fonts/drupaljam-track-icon.eot?#iefix") format("embedded-opentype"),
+    url("fonts/drupaljam-track-icon.woff") format("woff"),
+    url("fonts/drupaljam-track-icon.ttf") format("truetype"),
+    url("fonts/drupaljam-track-icon.svg#drupaljam-track-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "drupaljam-track-icon" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="track-icon-"]:before,
+[class*=" track-icon-"]:before {
+  font-family: "drupaljam-track-icon" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.track-icon-devops:before {
+  content: "\61";
+}
+.track-icon-platform:before {
+  content: "\62";
+}
+.track-icon-business:before {
+  content: "\63";
+}
+.track-icon-community:before {
+  content: "\64";
+}
+.track-icon-code:before {
+  content: "\65";
+}

@@ -10,8 +10,11 @@ title: DrupalJam 2016
 
     <div class="header-text">
       <p class="header-shadow">Hét Drupal evenement van de Lage Landen<br />12 mei 2016 &mdash; De Fabrique, Utrecht</p>
-      <p><a href="https://drupaljam.paydro.com/drupaljam-2016" class="button" target="_blank">Tickets kopen</a></p>
-      <p class="wide header-shadow">Op 12 mei 2016 vindt de volgende editie van DrupalJam plaats, opnieuw in De Fabrique in Utrecht. Het sfeervolle industriële staat opnieuw decor voor hét Drupal congres van de lage landen. Met een geweldig programma op een fantastische locatie is DrupalJam dé gelegenheid om te netwerken, kennis te delen en als bedrijf te verbinden met het populaire CMS Drupal.</p>
+      <p class="buttons">
+        <a href="https://drupaljam.paydro.com/drupaljam-2016" class="button" target="_blank">Tickets kopen</a>
+        <a href="#programma" class="button">Programma</a>
+      </p>
+      <p class="wide header-shadow">Op 12 mei 2016 vindt de volgende editie van DrupalJam plaats, opnieuw in De Fabrique in Utrecht. Het sfeervolle industriële staat opnieuw decor voor hét Drupal congres van de lage landen. Met een geweldig <a href="#programma" class="in-text">programma</a> op een fantastische locatie is DrupalJam dé gelegenheid om te netwerken, kennis te delen en als bedrijf te verbinden met het populaire CMS Drupal.</p>
     </div>
 
     <div class="brochure">
@@ -102,6 +105,29 @@ title: DrupalJam 2016
 </div>
 
 <div class="content-wrapper content-wrapper-dark">
+  <section class="content no-max-width">
+    <a name="programma"></a>
+    <%= partial 'program/program', locals: {program: data.program } %>
+  </section>
+</div>
+
+<div class="content-wrapper content-wrapper-light">
+  <section class="content">
+    <p style="margin-bottom: 50px;">
+      Op 12 mei 2016 vindt de volgende editie van DrupalJam plaats, opnieuw in 
+      De Fabrique in Utrecht. Het sfeervolle industriële staat opnieuw decor 
+      voor hét Drupal congres van de lage landen. Met een geweldig programma op
+      een fantastische locatie is DrupalJam dé gelegenheid om te netwerken,
+      kennis te delen en als bedrijf te verbinden met het populaire CMS Drupal.
+      Houdt uw mailbox of de website in de gaten, want binnenkort lanceren we de
+      mogelijkheden voor het sponsoren van DrupalJam 2016!
+    </p>
+
+    <%= partial 'shared/sponsors', locals: {sponsor_type: 'bronze' } %>
+  </section>
+</div>
+
+<div class="content-wrapper content-wrapper-dark">
   <section class="content">
     <p>
       Vragen of ideëen? Stuur ze naar
@@ -146,20 +172,3 @@ title: DrupalJam 2016
     </div>
   </section>
 </div>
-
-<div class="content-wrapper content-wrapper-light">
-  <section class="content">
-    <p style="margin-bottom: 50px;">
-      Op 12 mei 2016 vindt de volgende editie van DrupalJam plaats, opnieuw in 
-      De Fabrique in Utrecht. Het sfeervolle industriële staat opnieuw decor 
-      voor hét Drupal congres van de lage landen. Met een geweldig programma op
-      een fantastische locatie is DrupalJam dé gelegenheid om te netwerken,
-      kennis te delen en als bedrijf te verbinden met het populaire CMS Drupal.
-      Houdt uw mailbox of de website in de gaten, want binnenkort lanceren we de
-      mogelijkheden voor het sponsoren van DrupalJam 2016!
-    </p>
-
-    <%= partial 'shared/sponsors', locals: {sponsor_type: 'bronze' } %>
-  </section>
-</div>
-

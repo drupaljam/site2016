@@ -1,0 +1,6 @@
+<div class="program-slots">
+  <div class="program-slots-background"></div>
+  <% fill_slots(program['from'], program['to'], slots).each do |slot| %>
+    <%= partial 'program/slot', locals: {program: program, slot: slot} %>
+  <% end %>
+</div>

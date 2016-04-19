@@ -14,6 +14,10 @@ $logo-ratio: 1.21805293369804;
     padding: 65px 0 30px;
     text-align: center;
 
+    .buttons a {
+      margin: 10px 20px;
+    }
+
     .header-text, .brochure {
       width: 100%;
       margin: 25px auto 0;
@@ -25,6 +29,12 @@ $logo-ratio: 1.21805293369804;
 
         &.header-shadow {
           text-shadow: 2px 2px 3px rgba(73, 73, 73, 0.7);
+        }
+
+        a.in-text {
+          color: #E1D7D1;
+          text-decoration: none;
+          border-bottom: 1px solid #E1D7D1;
         }
       }
     }

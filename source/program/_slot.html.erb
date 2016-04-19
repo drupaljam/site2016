@@ -1,0 +1,37 @@
+<% size = ((slot['to'] - slot['from']) / (15 * 60)).floor %>
+<div class="program-slot program-slot-size-<%= size %> program-slot-type-<%= slot['type'] %>"<%= slot['type'] != 'empty' ? " data-hash=\"#{slot['title'].gsub('­', '').parameterize}\"" : '' %>>
+  <% if slot['type'] != 'empty' %>
+    <div class="program-slot-inner">
+      <h3><%= h slot['title'] %></h3>
+      <% if slot['speaker'] && size > 1 %>
+        <p class="speaker"><%= h slot['speaker'] %></p>
+      <% end %>
+      <% if ['visie', 'tech', 'community', 'business'].include? slot['type'] %>
+        <span class="track-icon track-icon-<%= slot['type'] %>" title="<%= slot['type'].titleize %>"></span>
+      <% end %>
+    </div>
+    <% if (slot['description']) %>
+      <div class="program-slot-expanded"><div class="program-slot-expanded-inner">
+        <div class="program-slot-expanded-header">
+          <span class="close-button"></span>
+          <p class="time"><%= (Time.new(2015, 4, 30, 0 , 0, 0) + slot['from']).strftime('%k:%M') %> - <%= (Time.new(2015, 4, 30, 0 , 0, 0) + slot['to']).strftime('%k:%M') %></p>
+          <h3><%= h slot['title'] %></h3>
+
+          <% if slot['speaker'] %>
+            <p class="speaker"><%= h slot['speaker'] %></p>
+          <% end %>
+          <% if ['visie', 'tech', 'community', 'business'].include? slot['type'] %>
+            <span class="track-icon track-icon-<%= slot['type'] %>" title="<%= slot['type'].titleize %>"></span>
+          <% end %>
+        </div>
+        <div class="program-slot-expanded-content">
+
+          <% if slot['description'] %>
+            <p><%= h slot['description'] %></p>
+          <% end %>
+          
+        </div>
+      </div></div>
+    <% end %>
+  <% end %>
+</div>

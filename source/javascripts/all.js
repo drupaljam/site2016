@@ -175,8 +175,69 @@ $('.sponsors').each(function() {
   $(window).on('load resize', setup);
 })();
 
+
 $(document).ready(function(){
   // Target your .container, .wrapper, .post, etc.
   $("body").fitVids();
 });
 
+$(document).ready(function() {
+  var history_enabled = (window.history && window.history.pushState);
+
+  $('.program-slot:has(.program-slot-inner):has(.program-slot-expanded)').each(function() {
+    var $slot = $(this);
+    $slot.addClass('clickable');
+
+    $('.program-slot-inner', $slot).click(function() {
+      $('.program-slot-expanded', $slot).fadeIn();
+      $('body').addClass('slot-open');
+      if (history_enabled) {
+        history.replaceState({}, '', window.location.pathname + '#' + $slot.attr('data-hash'));
+      }
+    });
+
+    $('.program-slot-expanded', $slot).click(function() {
+      $('.program-slot-expanded', $slot).fadeOut();
+      $('body').removeClass('slot-open');
+      if (history_enabled) {
+        history.replaceState({}, '', window.location.pathname)
+      }
+    });
+  });
+
+  (function() {
+    if (window.location.hash != '' && window.location.hash.match(/^#[a-z0-9-]+$/)) {
+      var h = window.location.hash.substring(1), 
+          slot;
+
+      if ($(".program-slot[data-hash=" + h + ']').length > 0) {
+        slot = $(".program-slot[data-hash=" + h + ']').eq(0)
+        $(window).scrollTop($('.program-wrapper').offset().top - 30);
+        $('.program').scrollLeft(slot.offset().left + $('.program').scrollLeft() - $('.program').offset().left);
+        slot.find('.program-slot-inner').click();
+        return;
+      }
+    }
+
+    var now = new Date;
+    var start = new Date(2016, 3, 19, 9, 0, 0);
+    var end = new Date(2016, 3, 19, 17, 30, 0);
+    
+    if (now >= start && now <= end) {
+      var quarters = (end - start) / 1000 / 60 / 15;
+      var now_quarters = Math.floor((now - start) / 1000 / 60 / 15);
+      var width = $('.program .program-slots').eq(0).width();
+      var o = Math.floor(width / quarters * now_quarters);
+      $('.program').scrollLeft(o);
+    }
+  })();
+
+  $(document).keyup(function(e) {
+    if (e.keyCode == 27) {
+      $('.program-slot:has(.program-slot-inner) .program-slot-expanded').fadeOut();
+      $('body').removeClass('slot-open');
+    }
+  });
+
+  return;
+});

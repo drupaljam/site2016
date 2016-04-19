@@ -1,0 +1,240 @@
+
+$program-quarter-width: 6em;
+$program-slot-height: 8em;
+$program-rooms-width: 4em;
+
+$program-space-between-slots: 0.2em;
+
+$program-rooms: 5;
+$program-quarters: 36;
+
+$program-slot-padding: $program-space-between-slots / 2;
+
+$color-main: #452B1D;
+$color-black: #000000;
+$color-antracite: #000000;
+$color-white: #ffffff;
+
+body.slot-open {
+  overflow: hidden;
+}
+
+.program-wrapper {
+  padding-left: $program-rooms-width;
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+
+  font-size: 1em;
+  line-height: 1.5em;
+
+  -webkit-font-smoothing: auto;
+  font-smoothing: auto;
+
+  .program {
+    width: 0;
+    padding-right: 100%;
+    overflow-x: scroll;
+    position: relative;
+  }
+
+  .program-rooms {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    padding-top: 1.5em + ($program-slot-height - $program-rooms-width);
+    height: 1.5em + ($program-rooms * $program-slot-height);
+    width: $program-rooms-width;
+
+    .program-room {
+      width: $program-slot-height;
+      height: $program-rooms-width;
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      -webkit-transform-origin: ($program-rooms-width / 2) ($program-rooms-width / 2);
+      -moz-transform-origin: ($program-rooms-width / 2) ($program-rooms-width / 2);
+      -ms-transform-origin: ($program-rooms-width / 2) ($program-rooms-width / 2);
+      -o-transform-origin: ($program-rooms-width / 2) ($program-rooms-width / 2);
+      transform-origin: ($program-rooms-width / 2) ($program-rooms-width / 2);
+      
+      margin-bottom: $program-slot-height - $program-rooms-width;
+      position: relative;
+
+      .program-room-inner {
+        color: #E4D3C6;
+        text-align: center;
+
+        position: absolute;
+        top: $program-slot-padding;
+        right: $program-slot-padding;
+        left: $program-slot-padding;
+        bottom: $program-slot-padding;
+        background: #452B1D;
+        padding: 0.5em;
+
+        h3 {
+          font-family: $base-font-family;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .program-global {
+    position: absolute;
+    left: 0;
+    top: 1.5em;
+    height: 0;
+
+    .program-slots {
+      height: 0;
+    }
+
+    .program-slot {
+      height: ($program-rooms * $program-slot-height);
+
+      &.program-slot-type-empty {
+        height: $program-slot-padding;
+      }
+    }
+  }
+
+  .program-timeline {
+    @include clearfix;
+    width: ($program-quarters * $program-quarter-width);
+
+    .program-timeline-time {
+      width: $program-quarter-width;
+      height: 1.5em;
+      float: left;
+      position: relative;
+
+      @for $i from 1 through $program-quarters {
+        &.program-timeline-time-size-#{$i} { width: $program-quarter-width * $i; }
+      }
+
+      .program-timeline-time-inner {
+        padding: 0 0.5em;
+        color: white;
+        text-align: left;
+
+        position: absolute;
+        background: #452B1D;
+        display: block;
+        top: 0;
+        right: $program-slot-padding;
+        left: $program-slot-padding;
+        bottom: $program-slot-padding;
+
+        display: flex;
+        justify-content: space-between;
+
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .program-slots {
+    @include clearfix;
+    width: ($program-quarters * $program-quarter-width);
+    height: $program-slot-height;
+    position: relative;
+
+    .program-slots-background {
+      background: #332015;
+      position: absolute;
+      top: $program-slot-padding;
+      right: $program-slot-padding;
+      left: $program-slot-padding;
+      bottom: $program-slot-padding;
+    }
+  }
+
+  .program-slot {
+    height: $program-slot-height;
+    float: left;
+    position: relative;
+
+    @for $i from 1 through $program-quarters {
+      &.program-slot-size-#{$i} { width: $program-quarter-width * $i; }
+    }
+
+    &.clickable {
+      cursor: pointer;
+    }
+
+    .program-slot-inner {
+      background: #F9DB27;
+      position: absolute;
+      top: $program-slot-padding;
+      right: $program-slot-padding;
+      left: $program-slot-padding;
+      bottom: $program-slot-padding;
+      padding: 0.5em;
+      overflow: hidden;
+
+      color: #22150E;
+      z-index: 50;
+    }
+
+    .program-slot-expanded {
+      display: none; // default, changed by JS
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: $color-main;
+      z-index: 100;
+
+      .close-button {
+        display: block;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        float: right;
+        cursor: pointer;
+        font-family: 'Alfa Slab One';
+
+        &:before {
+          content: 'X';
+        }
+      }
+
+      .program-slot-expanded-inner {
+        position: relative;
+        height: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+
+        .program-slot-expanded-content {
+          padding: 1em;
+          width: 100%;
+          height: 100%;
+          overflow-y: auto;
+        }
+
+        .program-slot-expanded-header {
+          background: #F9DB27;
+          padding: 1em;
+          color: #22150E;
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+.track-icon {
+  position: absolute;
+  right: 0.5em;
+  bottom: 0.5em;
+  line-height: 1;
+}

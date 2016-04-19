@@ -1,0 +1,30 @@
+
+<div class="program-wrapper">
+  <div class="program-rooms">
+    <% program['rooms'].each do |room| %>
+      <div class="program-room"><div class="program-room-inner"><h3><%= room['name'] %></h3></div></div>
+    <% end %>
+  </div>
+  <div class="program">
+    <div class="program-timeline">
+      <% program_time_columns(program).each do |t| %>
+        <% size = ((t['to'] - t['from']) / (15 * 60)).floor %>
+        <div class="program-timeline-time program-timeline-time-size-<%= size %>">
+          <div class="program-timeline-time-inner">
+            <span><%= (Time.new(2016, 5, 12, 0 , 0, 0) + t['from']).strftime('%k:%M') %></span>
+            <% if t['last'] %>
+              <span><%= (Time.new(2016, 5, 12, 0 , 0, 0) + t['to']).strftime('%k:%M') %></span>
+            <% end %>
+
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="program-global">
+      <%= partial 'program/slots', locals: {program: program, slots: program['global']['slots']} %>
+    </div>
+    <% program['rooms'].each do |room| %>
+      <%= partial 'program/room', locals: {program: program, room: room} %>
+    <% end %>
+  </div>
+</div>

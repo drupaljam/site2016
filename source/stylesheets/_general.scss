@@ -61,6 +61,10 @@ section {
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   margin: 0 auto;
+
+  &.no-max-width {
+    max-width: none;
+  }
 }
 
 h1 {
