@@ -175,3 +175,8 @@ $('.sponsors').each(function() {
   $(window).on('load resize', setup);
 })();
 
+$(document).ready(function(){
+  // Target your .container, .wrapper, .post, etc.
+  $("body").fitVids();
+});
+
