@@ -18,6 +18,19 @@ bronze:
       key: webscale
       name: Webscale
       url: https://www.webscale.nl/
+    -
+      key: opensocial
+      name: Open Social
+      url: https://www.drupal.org/project/social
+    -
+      key: netvlies
+      name: netvlies
+      url: https://www.netvlies.nl/
+    -
+      key: triquanta
+      name: Triquanta
+      url: https://www.triquanta.nl/
+
 silver:
   human: Zilver
   sponsors:
@@ -37,6 +50,10 @@ silver:
       key: trinoco
       name: Trinoco
       url: https://trinoco.nl/
+    -
+      key: clockwork
+      name: Clockwork
+      url: http://www.clockwork.nl/
 gold:
   human: Goud
   sponsors:
@@ -56,6 +73,10 @@ gold:
       key: ezcompany
       name: ezCompany
       url: https://www.ezcompany.nl/
+    -
+      key: byte
+      name: Byte
+      url: https://www.byte.nl/
 platinum:
   human: Platinum
   sponsors: 
