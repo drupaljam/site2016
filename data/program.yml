@@ -41,27 +41,28 @@ rooms:
         title: "The Second Enlightenment"
         speaker: Steven Pemberton
         type: visie
-        description: "Het boek maakte de verlichting mogelijk, het web maakt een tweede verlichting mogelijk."
+        description: "Het boek maakte de verlichting mogelijk, het web maakt een tweede verlichting mogelijk.\n\nGutenberg creëerde een nieuwe industrie, die weer andere nieuwe industrieën mogelijk maakte en zorgde voor een nieuw aanbod van goedkope, overvloedige informatie, die letterlijk door de eeuwen heen exponentieel is toegenomen. Deze overvloed aan informatie lag aan de basis van de verlichting, die was gebaseerd op de rede en informatie. Juist op het punt waarop we tegen problemen aanliepen met de toename van informatie vanwege de enorme hoeveelheid papier en storage space die we hiervoor nodig zouden hebben, kwam het web ten tonele. Dit zorgde ervoor dat de exponentiële groei is voortgezet, zelfs goedkoper dan voorheen en beter beriekbaar. Maar het web is niet alleen een kwantitatieve verandering, het is een kwalitatieve verandering, die in ieder geval net zoveel invloed op de maatschappij zal hebben als het boek, als het niet meer is."
       - 
         from: 12:00
         to: 12:45
         title: "Nieuwe interacties in een verbonden wereld"
         speaker: Iskander Smit
         type: visie
-        description: "Wat betekent het om fysieke objecten toe te voegen aan onze digitale systemen? Wat zijn de laatste IoT ontwikkelingen?"
+        description: "Wat betekent het om fysieke objecten toe te voegen aan onze digitale systemen? Wat zijn de laatste IoT ontwikkelingen?\n\nHet internet of things is een breed begrip. We gaan fysieke objecten toevoegen aan het digitale systeem waarmee we onze diensten opzetten. Dat betekent nieuwe vormen van interacties, en ook nieuwe manieren om digitale informatie te verwerken en te koppelen. En de dingen die we gebruiken gaan veranderen. Adaptief, haptisch, veranderend in het moment, multimodal. In deze sessie wordt stilgestaan bij de ontwikkelingen, maar zal ook zelf kunnen worden ervaren wat het betekent."
       - 
         from: 14:00
         to: 14:45
         title: "Waarom Open overheid?"
         speaker: Paul Suijkerbuijk
         type: visie
+        description: "Wat is open data en waar dient deze aan te voldoen? Wat is de invloed van open data op de overheid en de samenleving?"
       - 
         from: 15:00
         to: 15:45
         title: "Choosing the web’s future"
         speaker: Peter Paul Koch
         type: tech
-        description: "Maak de browser geen bloatware. Een website is geen native app. Hoe kunnen we een succesvol web-ecosysteem bouwen."
+        description: "Maak de browser geen bloatware. Een website is geen native app. Hoe kunnen we een succesvol web-ecosysteem bouwen.\n\nWebontwikkelaars en browsermakers proberen teveel native mobiele aps na te doen, en volgens PPK is dit tevergeefs. We kunnen niet beter worden in native dan native apps.\n\nDeze queeste naar native nadoen heeft enige ongewenste bijeffecten: teveel nieuwe browserfunctionaliteiten die teveel nieuwe, soms logge, polyfills en anderer tools nodig hebben om te functioneren. Deze tsunami aan nieuwe tools zorgt er vervolgens voor dat webontwikkelaars tegenwoordig denken dat ze de tools moeten beheersen in plaats van HTML, CSS en JavaScript.\n\nHet gaat de verkeerde kant op. We moeten even pauzeren om te besluiten waar we het web eigenlijk voor willen gebruiken, hoe we een succesvol web-ecosysteem kunnen opbouwen naast, maar niet in concurrentie met, native ecosystemen, en hoe we dit alles uitleggen aan Javaprogrammeurs en andere met een niet-web-achtergrond.\n\nWe moeten eens goed bij onszelf te rade gaan."
       - 
         from: 16:00
         to: 16:15
@@ -70,9 +71,10 @@ rooms:
       - 
         from: 16:15
         to: 17:00
-        title: "Keynote"
+        title: "Keynote: Live Steam: Keeping Your Users Alive"
         speaker: Eleanora Saitta
         type: visie
+        description: "Vaak denken we op abstract niveau over softwarebeveiliging. Maar hoe werkt dat in de praktijk? Wat is de invloed van onze software?\n\nWe denken allemaal na over de beveiliging van de systemen die we bouwen op abstract niveau, maar wat geberut er als het veel te echt wordt. Wat kunnen we daarvan leren voor de rest van ons werk? Ik heb in de afgelopen vijf jaar systemen in risicovolle situaties beveiligd. Wat ik hiervan geleerd heb, heeft mijn kijk op software security veranderd. Deze sessie gaat over real-world beveiligingsgevolgen en hoe onze software daarvan invloed op is."
       - 
         from: 17:00
         to: 17:15
@@ -87,21 +89,21 @@ rooms:
         title: "Headless Drupal. Waarom & hoe een RESTful API in Drupal?"
         speaker: Joris Snoek
         type: tech
-        description: "Wat is headless Drupal en hoe implementeer je het? Waarom wordt Lucius er blij van en tegen welke uitdagingen liepen we aan?"
+        description: "Wat is headless Drupal en hoe implementeer je het?\n\nWaarom wordt ik er blij van en tegen welke uitdagingen kwam ik tegen?"
       -
         from: 12:00
         to: 12:45
         title: "Of horses, water & getting them to drink"
         speaker: "Chris Jansen & Jeffrey A. McGuire"
         type: community
-        description: "Wetenschappelijk bewijs waarom bijdragen aan open source meer oplevert dan het kost en hoe dit waar te maken."
+        description: "Wetenschappelijk bewijs waarom bijdragen aan open source meer oplevert dan het kost en hoe dit waar te maken.\n\nHoewel we \"geloven\" in open source en \"weten\" dat bijdragen een goede zaak is voor ons allemaal, blijkt het dat veel bedrijven en hun ontwikkelaars moeite hebben om dit op te nemen in hun dagelijkse routine. Waarom worstelen we hiermee als de voordelen zo duidelijk zijn?\n\nIn 2015 heeft Chris \"legolasbo\" Jansen een wetenschappelijk onderzoek op dit gebied uitgevoerd. Hij interviewde tientallen open source mensen uit het bedrijfsleven, ontwikkelaars en leden van de community uit de hele wereld. In deze sessie bespreken Chris en Jeffrey A. \"jam\" McGuire de studie en geven een aantal bewezen, bruikbare tactieken om ons geloof over open source beter uit te lijnen met onze acties.\n\nTake-aways:\n\nOpen deur: Waarom bijdrage goed is.\nBlokkades voor het bijdragen voor management en ontwikkelaars.\nSommige bewezen  unblockers' om uit te proberen.\n\nOproep tot actie: Help ons dit verhaal scherper te maken en geef feedback!"
       -
         from: 14:00
         to: 14:45
         title: "Reinventing Organizations"
         speaker: Roel de Meester
         type: visie
-        description: "De samenleving verandert en mensen zijn meer en meer op zoek naar zingeving. Dit zien we ook duidelijk bij open source."
+        description: "De samenleving verandert. We zien dat mensen meer en meer op zoek gaan naar 'purpose', zingeving, in hun werk. De 'drupal' community is hiervan een prachtig voorbeeld. De kracht van samenwerking en open source is zo groot dat mensen zelfs bereid zijn om een groot deel van hun 'vrije' tijd te spenderen aan iets dat niet onmiddellijk geld oplevert.\n\nWe zien ook dat er maar weinig organisaties in slagen om het maximum potentieel van mensen te ontluiken, en dit valt zeker ook op bij de Millennials.\n\n\"Reinventing organizations\" is een handboek, maar het is net zoals 'drupal' veel meer dan dat. Het is een gedachtengoed, een beweging die langzaam meer en meer tractie krijgt en waarvan veel concepten momenteel al aanwezig zijn in de grote 'drupal' community.\n\nDeze presentatie geeft je een overzicht van de ideeën van Frederic Laloux, voldoende als teaser en als discussie achteraf.\n\nDisclaimer: Dit is geen talk over techniek, websites noch agile of sales."
       - 
         from: 15:00
         to: 15:45
@@ -118,28 +120,28 @@ rooms:
         title: "Docker for Drupal Development"
         speaker: Eric Mulder
         type: tech
-        description: "Optimaliseer jouw lokale ontwikkelomgeving met Docker en voorkom gedoe met verschillende requirements."
+        description: "Optimaliseer jouw lokale ontwikkelomgeving met Docker en voorkom gedoe met verschillende requirements.\n\nIn deze sessie vertel ik waarom het een goed idee is om Docker te gebruiken voor een lokale ontwikkelomgeving. Dit zorgt er onder andere voor dat je nooit meer gedoe hebt met verschillende requirements op gebied van PHP, Memcached, Solr, etc. Ik leg uit hoe je  een lokale ontwikkelomgeving met Docker inricht en hoe je gebruik maakt van docker-compose voor eenvoudig opstarten van een full-stack omgeving."
       -
         from: 12:00
         to: 12:45
         title: "Cacheability metadata: Hoe Drupal 8 één moeilijk probleem oplost"
         speaker: Marc van Gend
         type: tech
-        description: "Een praktische sessie die je helpt om de performance van je modules in Drupal 8 te optimaliserenen problemen te voorkomen."
+        description: "Altijd actuele content en betere performance, zonder security problemen? Cache keys, cache tags en cache contexts zijn je vrienden.\n\n\"There are only two hard things in Computer Science: cache invalidation and naming things.\"\n\nDeze bekende uitspraak zullen de meeste developers wel herkennen. Door middel van cacheability metadata probeert Drupal 8 het eerste probleem, cache invalidation, op te lossen. Maar het is wel een complex systeem, waarbij je goed moet nadenken wat je aan het doen bent.\n\nIn deze praktische sessie leg ik uit hoe je als module developer gebruik kan maken van  Cache Keys, Cache Tags, Cache Context en Cache Max-age. Door deze concepten goed toe te passen kan je de performance van je modules optimaliseren en voorkom je problemen."
       -
         from: 14:00
         to: 14:45
         title: "Responsive images: resolution switching in Drupal 7 & 8"
         speaker: Rolf Meijer
         type: tech
-        description: "Wat is er mogelijk met responsive images in Drupal. Welke modules heb je nodig en wanneer is een polyfill noodzakelijk."
+        description: "Wat is er mogelijk met responsive images in Drupal. Welke modules heb je nodig en wanneer is een polyfill noodzakelijk.\n\nDe belangrijkste use case van de Responsive Images CSS3 module is resolution switching en niet artwork switching. De toepassing is veel breder en browsers krijgen meer vrijheid om te bepalen wat de optimale afbeelding is om op te halen. In Drupal wordt echter niet de volledige specificatie ondersteund.\n\nOm resolution switching – met media-queries en de sizes en scrset attributen – voor elkaar te krijgen zijn er in Drupal 7 veel contrib modules nodig. In Drupal 8 gaat dat eenvoudiger en met alleen core. Beide komen uitgebreid aan bod, met voorbeelden hoe dit te implementeren en of een polyfill noodzakelijk is.\n\nDoelgroep: Front-enders, Niveau: Intermediate. Kennis van de css3 responsive images module wordt verondersteld."
       - 
         from: 15:00
         to: 15:45
         title: "Ontwikkelen van online platformen met Drupal 8"
         speaker: Raymond Muilwijk
         type: tech
-        description: "Hoe kan je met Drupal 8 sneller complexe platformen en proto-types bouwen."
+        description: "Hoe kan je met Drupal 8 sneller complexe platformen en proto-types bouwen.\n\nMet Drupal 8 zijn er nieuwe mogelijkheden voor het realiseren van online platformen en integraties. Denk hierbij aan het gebruik van Drupal als framework, een datamodel dat ook buiten de Drupal community te begrijpen is, ontsluiten van webservices en het gebruik van code vanuit de gehele PHP community.\n\nTijdens deze sessie leg ik aan zowel backend ontwikkelaars, architecten als business developers uit hoe je nog sneller met Drupal complexe platformen en proto-types neer kunt zetten."
   -
     name: Stoomlokaal
     slots:
@@ -149,21 +151,21 @@ rooms:
         title: "Game Theory, betere aanbiedingen door wiskunde"
         speaker: Bert Boerland
         type: business
-        description: "Hoe haal je het beste uit samenwerking met partners voor zowel jezelf, jouw partner als jullie klant met behulp van wiskunde."
+        description: "Hoe haal je het beste uit samenwerking met partners voor zowel jezelf, jouw partner als jullie klant met behulp van wiskunde.\n\nDe meeste Drupal bureaus bieden full service naar hun klanten, vaak in combinatie met hun partners. Partners voor het hosten, partners voor ontwerp, partners voor A/B-testen of partners voor branding.\n\nAls je samen met een partner werkt voor een prospect, hebben beide partners een gemeenschappelijk doel. Namelijk, maak van de prospect een klant en dus zorg voor een goedkope aanbieding die laag geprijsd is en veel waarde creëert. En beide partners hebben hun eigen doel, namelijk een zo groot mogelijk stuk van de taart verkrijgen door het eigen deel te maximaliseren. Tegengestelde belangen?\n\nIn deze sessie zullen we presenteren hoe de Game Theory kan helpen om de optimale beslissing te maken bij zowel u, uw partner als uw klant. We zullen laten zien hoe het gebruik van wiskunde u helpt bij het optimaliseren van uw beslissingen. Na een introductie in de wetenschappelijke basis van Game Theory laten we zien hoe het gebruik van deze theorie jullie samen zal helpen tot een betere oplossing, zonder te eindigen in \"The Prisoners Dilemma\".\n\nGetallen, wiskunde, economie maar voornamelijk filtsend gebracht en met meer dan één knipoog. Elke entrepeneur zou het moeten overwegen om gebruik te maken van de aangereikte tools en methoden. Elke bezoeker zou moeten overwegen aanwezig te zijn om vermaeck ende kennis te maximaliseren. Elke klant zou bewust moeten zijn dat u deze theorie beheerst en in praktijk brengt.\n\nEen sessie dus op het snijvlak van economie (aanbestedingen), wiskunde (Game Theory) en theater (vuurwerk). Een sessie die u moet bijwonen. Na deze sessie zal u ook zeggen: better offering through math."
       -
         from: 12:00
         to: 12:45
         title: "Toegankelijkheid: het sprookje over de 7 blinden en de prinses met het lamme handje"
         speaker: Jeroen Hulscher
         type: tech
-        description: "Hoe houden we het web toegankelijk met de diversiteit van platformen, browsers, devices en gebruikers."
+        description: "Hoe houden we het web toegankelijk met de diversiteit van platformen, browsers, devices en gebruikers.\n\nEr is een toenemende diversiteit in platformen, browsers, devices en verbindingssnelheden. Dezelfde diversiteit izien we n onze gebruikers, voor wie het digitale kanaal soms de enige connectie met de buitenwereld is. Wie zijn deze mensen, hoe gebruiken zij het internet, waar lopen zij tegenaan, en hoe lossen wij dat voor hen op?"
       -
         from: 14:00
         to: 14:45
         title: "PHP-FIG: how the PHP world got off their islands"
         speaker: Bart Feenstra
         type: community
-        description: "Wat is FIG en welke PSRs zijn er? Hoe bouw je uitwisselbare PHP packages? Leer alles over de wereldwijde PHP community."
+        description: "Wat is FIG en welke PSRs zijn er? Hoe bouw je uitwisselbare PHP packages? Leer alles over de wereldwijde PHP community.\n\nLange tijd waren PHP-projecten geïsoleerde initiatieven, of eilanden, zoals veel non-fictie autuers ze noemden. Elk project werkte volgens zijn eigen regels en best-practices en ontwikkelaars die ervaren waren in één project, voelde zich vaak beginner in het andere.\n\nMet het werk van de PHP Framework Interoperability Group of FIG in het kort, is de basis gelegd voor de samenwerking tussen vele populaire PHP projecten, waaronder Drupal. Het portfolio van de specificaties (PSR's), gemaakt en gebruikt door de PHP-gemeenschap in het algemeen, is zo belachelijk eenvoudig dat het grootste gedeelte hiervan snel algemeen gebruikt werd. Dit leidde weer tot de publicatie van vele kleine PHP pakketten die gebruikt werden door volledig ongerelateerde projecten. Een revolutie waarin Composer een belangrijke rol heeft gespeeld.\n\nDeze sessie zal FIG in de kijker zetten en uit leggen hoe de groep werkt. Ik zal ook ingaan op de beschikbare PSRs en degenen die op dit moment in ontwikkeling zijn. Na het bijwonen van deze sessie, zult je veel meer over de wereldwijde PHP-gemeenschap weten en alles leren over wat je nodig hebt om framework-interoperabele PHP-pakketten te maken."
       - 
         from: 15:00
         to: 15:45
@@ -185,11 +187,11 @@ rooms:
         title: "Jekyll microsites vanuit Drupal"
         speaker: Daniel Beeke
         type: tech
-        description: "Case study over het genereren van Jekyll sites vanuit Drupal en de tools en modules die je daarbij kan gebruiken."
+        description: "Case study over het genereren van Jekyll sites vanuit Drupal en de tools en modules die je daarbij kan gebruiken.\n\nAan de hand van de website https://nbvt.nl zal ik uitleggen hoe we Jekyll microsites maken met de content uit nbvt.nl en daarmee bijvoorbeeld http://kozijnenvanhout.nl/ creëren. Het is een sessie die vooral ter inspiratie dient en op veel vlakken zal gaan over maatwerkoplossingen en de opensource modules die daar uit voort gekomen zijn.\n\nMet deze modules kun je een soort gelijke oplossing bouwen. Het betreft de modules: jse (eenvoudige API lagen waarin je nodes in JSON toont dmv display suite) en entity2markdown (node/34/markdown opent een markdown bestand met een yaml front-matter voor Jekyll, ook weer in te stellen via display suite). Ook is er een opensource Jekyll build server gebouwd die we gebruiken om Jekyll websites te bouwen naar statische html.\n\nAl deze componenten bij elkaar zorgen ervoor dat wanneer een beheerder op nbvt.nl een node maakt van het content type microsite en alle informatie invult (kleurtjes, lettertypes, domein, leden en een aantal specifieke componenten), dat er dan na 2 minuten er een statische html website geserveerd wordt en alleen de DNS eventueel nog ingesteld moet worden."
       - 
         from: 15:00
         to: 15:45
         title: "De toekomst van DevOps in Drupal Social"
         speaker: Niels van der Molen
         type: tech
-        description: "Een case study van een transitie van een monolithische Vagrant/Jenkins naar microservice Docker/Travis workflow."
+        description: "Een case study van een transitie van een monolithische Vagrant/Jenkins naar microservice Docker/Travis workflow.\n\nIn deze sessie een introductie in de DevOps methodes en tools die geïmplementeerd zijn voor de Drupal Social distributie. Dit is een case study van een transitie van een monolithic Vagrant/Jenkins workflow naar een microservice Docker workflow met Travis vanuit het perspectief van een ontwikkelaar.\n\nWe vertellen hoe we specifieke development tools, zoals xDebug, opgenomen zijn in onze Docker workflow door het gebruik van meerdere Dockerfiles en docker-compose.yml files. Verder wordt er gekeken naar de praktische implementatie van Docker containers als artifacts die gebruikt worden in een continuous delivery pipeline.\n\nDoelgroep: backend ontwikkelaars die geinteresseerd zijn in Devops, Docker, Drupal Social of continuous delivery."
