@@ -27,7 +27,7 @@
         <div class="program-slot-expanded-content">
 
           <% if slot['description'] %>
-            <p><%= h slot['description'] %></p>
+            <p><%= simple_format(slot['description']) %></p>
           <% end %>
           
         </div>
