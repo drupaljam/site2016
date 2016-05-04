@@ -30,6 +30,14 @@ bronze:
       key: triquanta
       name: Triquanta
       url: https://www.triquanta.nl/
+    -
+      key: wim
+      name: WIM voor Gemeenten
+      url: http://wimgemeenten.nl/
+    -
+      key: acquia
+      name: Acquia
+      url: https://www.acquia.com/
 
 silver:
   human: Zilver
