@@ -71,7 +71,7 @@ rooms:
       - 
         from: 16:15
         to: 17:00
-        title: "Keynote: Live Steam: Keeping Your Users Alive"
+        title: "Keynote: Live Stream: Keeping Your Users Alive"
         speaker: Eleanora Saitta
         type: visie
         description: "Vaak denken we op abstract niveau over softwarebeveiliging. Maar hoe werkt dat in de praktijk? Wat is de invloed van onze software?\n\nWe denken allemaal na over de beveiliging van de systemen die we bouwen op abstract niveau, maar wat geberut er als het veel te echt wordt. Wat kunnen we daarvan leren voor de rest van ons werk? Ik heb in de afgelopen vijf jaar systemen in risicovolle situaties beveiligd. Wat ik hiervan geleerd heb, heeft mijn kijk op software security veranderd. Deze sessie gaat over real-world beveiligingsgevolgen en hoe onze software daarvan invloed op is."
