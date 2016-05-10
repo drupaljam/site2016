@@ -37,6 +37,22 @@ $logo-ratio: 1.21805293369804;
           border-bottom: 1px solid #E1D7D1;
         }
       }
+
+      .highlight {
+        background-color: #FCE93C;
+        background-image: linear-gradient(-180deg, #FCE93C 0%, #F8CE1C 100%);
+        border-radius: 2px;
+        padding: 15px;
+
+        &, & p {
+          color: #452B1D;
+        }
+
+        p a.in-text {
+          color: #452B1D;
+          border-bottom: 1px solid #452B1D;
+        }
+      }
     }
 
     .counter {
