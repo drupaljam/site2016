@@ -100,11 +100,11 @@ rooms:
       -
         from: 14:00
         to: 14:45
-        title: "Reinventing Organizations"
-        speaker: Roel de Meester
-        type: visie
-        description: "De samenleving verandert. We zien dat mensen meer en meer op zoek gaan naar 'purpose', zingeving, in hun werk. De 'drupal' community is hiervan een prachtig voorbeeld. De kracht van samenwerking en open source is zo groot dat mensen zelfs bereid zijn om een groot deel van hun 'vrije' tijd te spenderen aan iets dat niet onmiddellijk geld oplevert.\n\nWe zien ook dat er maar weinig organisaties in slagen om het maximum potentieel van mensen te ontluiken, en dit valt zeker ook op bij de Millennials.\n\n\"Reinventing organizations\" is een handboek, maar het is net zoals 'drupal' veel meer dan dat. Het is een gedachtengoed, een beweging die langzaam meer en meer tractie krijgt en waarvan veel concepten momenteel al aanwezig zijn in de grote 'drupal' community.\n\nDeze presentatie geeft je een overzicht van de ideeën van Frederic Laloux, voldoende als teaser en als discussie achteraf.\n\nDisclaimer: Dit is geen talk over techniek, websites noch agile of sales."
-      - 
+        title: "GEWIJZIGD: Drupal 8 - The site builders' release"
+        speaker: Antje Lorch
+        type: tech
+        description: "Drupal 8 is een grote stap vooruit om website te bouwen zonder - ofalleen maar heel weinig - code te schrijven.\n\nHet is niet maar de stap van \"There's a module for that\" naar \"Dat is in Core\" - er zijn ook een veel verborgen juweeltjes die ik ontdekt heb tijdens het schrijven van Drupal 8 documentatie.\n\nIk zal een overzicht geven van wat er nu in core is - maar ook hoe module developer er verder aan kunnen bijdragen om de gebruikersvriendelijkheid voor sitebuilders te verbeteren."
+      -
         from: 15:00
         to: 15:45
         title: "Drupal in the Newsroom"
